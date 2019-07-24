@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+(1..20).each do |appartment_number|
+  Appartment.find_or_create_by!(number: appartment_number, entrance: 1)
+end
+
+(1..36).each do |appartment_number|
+  Appartment.find_or_create_by!(number: appartment_number, entrance: 2)
+end
+
+(1..20).each do |appartment_number|
+  Appartment.find_or_create_by!(number: appartment_number, entrance: 3)
+end
